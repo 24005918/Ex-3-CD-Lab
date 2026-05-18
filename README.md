@@ -43,37 +43,21 @@ return 1;
 %{
 #include<stdio.h>
 %}
-
 %token A ID
-
 %%
-
 statement: A'='E
-
 | E {
-
 printf("\n Valid arithmetic expression");
-
 $$=$1;
-
 }
-
 ;
-
 E: E'+'ID
-
 | E'-'ID
-
 | E'*'ID
-
 | E'/'ID
-
 | ID
-
 ;
-
 %%
-
 extern FILE*yyin; main() {
 do { yyparse();
 }while(!feof(yyin)); } yyerror(char*s)
