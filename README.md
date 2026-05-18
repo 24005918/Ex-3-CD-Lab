@@ -68,8 +68,14 @@ do { yyparse();
 ```
 
 
+
 # OUTPUT
 <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/e34466d2-be4a-49b7-8222-be722a7795a6" />
+
+
+
+
+
 
 # RESULT
 A YACC program to recognize a valid arithmetic expression that uses operator +,-,* and / is executed successfully and the output is verified.
